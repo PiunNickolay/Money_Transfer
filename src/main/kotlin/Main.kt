@@ -1,8 +1,12 @@
 package ru.netology
 
 fun main() {
-    val amount = 50
+    val amount = 5000
     val comission = 0.0075
-    var result = if (amount >= 35) amount*comission else 0
-    println("Комиссия составит: $result (рублей)")
+    var result:Double = amount*comission
+    if (result<35){
+        println("Комиссия составит: 0 (рублей)")
+    }else {
+        println("Комиссия составит: $result (рублей)")
+    }
 }
